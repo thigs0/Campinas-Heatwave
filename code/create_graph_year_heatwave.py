@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 # Dados CSV (você pode substituir isso por leitura de um arquivo CSV real)
 from io import StringIO
 
-df = pd.read_csv("../Heatwaves/dados/tmax_ref.csv")
+df = pd.read_csv("Heatwaves/dados/tmax_ref.csv")
 df["year"] = pd.to_datetime(df["time"]).dt.year
 df = df.groupby("year")[["greater", "heatwave", "cummulative"]].sum().reset_index()
 
@@ -23,6 +23,6 @@ fig.update_layout(
 )
 
 # Exportar como HTML
-fig.write_html("../graph/heatwave.html")
+fig.write_html("./graph/heatwave.html")
 print("✅ Gráfico salvo como 'grafico_temperaturas.html'")
 
