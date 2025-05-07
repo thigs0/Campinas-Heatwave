@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campinas Heatwaves</title>
+    <style>
+        /* Reset de margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #2a3d66;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Estilo para os parágrafos */
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Títulos */
+        h2 {
+            margin-top: 40px;
+            font-size: 2rem;
+            color: #2a3d66;
+            border-bottom: 2px solid #2a3d66;
+            padding-bottom: 5px;
+        }
+
+        /* Cards */
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h4 {
+            font-size: 1.2rem;
+            color: #2a3d66;
+        }
+
+        .card p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        /* Container para os cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        /* Estilo para os iframes */
+        iframe {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 20px 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            iframe {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Campinas Heatwaves</h1>
+    </header>
+
+    <p>Os dados são coletados diariamente do Instituto Agronômico de Campinas (IAC) para obtermos uma informação em tempo real da situação climatológica da cidade.</p>
+
+    <p>As ondas de calor (Heatwaves) são calculadas sempre no mesmo ponto e usando a definição de temperatura máxima diária superior à média histórica por pelo menos 5°C durante 3 dias consecutivos.</p>
+
+    <h2>Ondas de Calor Anuais</h2>
+    <div class="card-container">
+        <div class="card">
+            <h4><b>Maior onda de calor consecutiva do ano</b></h4>
+            <p>8 dias</p>
+        </div>
+        <div class="card">
+            <h4><b>Maior anomalia de temperatura do ano em uma onda de calor</b></h4>
+            <p>11 °C</p>
+        </div>
+        <div class="card">
+            <h4><b>Média de anomalia de temperatura do ano em uma onda de calor</b></h4>
+            <p>3 °C</p>
+        </div>
+    </div>
+
+    <iframe src="./graph/Acceptance of Same-Sex Relationships.html" title="Ondas de Calor Anuais"></iframe>
+
+    <h2>Ondas de Calor Mensais</h2>
+    <div class="card-container">
+        <div class="card">
+            <h4><b>Maior onda de calor consecutiva do mês</b></h4>
+            <p>8 dias</p>
+        </div>
+        <div class="card">
+            <h4><b>Maior anomalia de temperatura do mês em uma onda de calor</b></h4>
+            <p>11 °C</p>
+        </div>
+        <div class="card">
+            <h4><b>Média de anomalia de temperatura do mês em uma onda de calor</b></h4>
+            <p>3 °C</p>
+        </div>
+    </div>
+
+    <iframe src="./graph/Acceptance of Same-Sex Relationships.html" title="Ondas de Calor Mensais"></iframe>
+</body>
+</html>
