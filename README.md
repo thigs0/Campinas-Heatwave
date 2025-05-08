@@ -1,7 +1,10 @@
 # Campinas-Heatwave
 
 ```bash
-pip install polars pandas numpy xarray
+sudo apt update
+sudo apt install ca-certificates
+sudo update-ca-certificates
+pip install polars pandas numpy xarray 
 ```
 ```
 ```
